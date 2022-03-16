@@ -1,0 +1,14 @@
+﻿@using TioRACLab.Streaming.Core
+@implements IStreamingComponent
+
+<p>@Text</p>
+
+@code {
+
+    [Parameter]
+    public string Text { get; set; } = "";
+
+    public string Name => "Simple Text";
+
+    public string Description => "";
+}

@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32210.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TioRACLab.Streaming", "TioRACLab.Streaming\TioRACLab.Streaming.csproj", "{CB01B2CC-7472-407B-8B41-5B3856102385}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TioRACLab.Streaming.Core", "TioRACLab.Streaming.Core\TioRACLab.Streaming.Core.csproj", "{8AE24C55-C554-4BC2-BB31-E313503B7375}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TioRACLab.Streaming.Server", "TioRACLab.Streaming.Server\TioRACLab.Streaming.Server.csproj", "{C66129E3-205B-4DF0-86F7-77C55F727088}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{144D1148-F232-4072-B046-BEF9E9CA7857}"
+	ProjectSection(SolutionItems) = preProject
+		Test\TioRACLab.Streaming.TestPlugins\TioRACLab.Streaming.TestPlugins.csproj = Test\TioRACLab.Streaming.TestPlugins\TioRACLab.Streaming.TestPlugins.csproj
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CB01B2CC-7472-407B-8B41-5B3856102385}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB01B2CC-7472-407B-8B41-5B3856102385}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB01B2CC-7472-407B-8B41-5B3856102385}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB01B2CC-7472-407B-8B41-5B3856102385}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AE24C55-C554-4BC2-BB31-E313503B7375}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AE24C55-C554-4BC2-BB31-E313503B7375}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AE24C55-C554-4BC2-BB31-E313503B7375}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AE24C55-C554-4BC2-BB31-E313503B7375}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C66129E3-205B-4DF0-86F7-77C55F727088}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C66129E3-205B-4DF0-86F7-77C55F727088}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C66129E3-205B-4DF0-86F7-77C55F727088}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C66129E3-205B-4DF0-86F7-77C55F727088}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {877729C1-6125-412B-AB0D-B1D66775CD27}
+	EndGlobalSection
+EndGlobal
