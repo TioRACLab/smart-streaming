@@ -7,12 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TioRACLab.Streaming", "TioR
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TioRACLab.Streaming.Core", "TioRACLab.Streaming.Core\TioRACLab.Streaming.Core.csproj", "{8AE24C55-C554-4BC2-BB31-E313503B7375}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TioRACLab.Streaming.Server", "TioRACLab.Streaming.Server\TioRACLab.Streaming.Server.csproj", "{C66129E3-205B-4DF0-86F7-77C55F727088}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{144D1148-F232-4072-B046-BEF9E9CA7857}"
-	ProjectSection(SolutionItems) = preProject
-		Test\TioRACLab.Streaming.TestPlugins\TioRACLab.Streaming.TestPlugins.csproj = Test\TioRACLab.Streaming.TestPlugins\TioRACLab.Streaming.TestPlugins.csproj
-	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TioRACLab.Streaming.Client", "TioRACLab.Streaming.Client\TioRACLab.Streaming.Client.csproj", "{87230CD8-05B8-4C90-B1CA-D02BE9BA2DA4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TioRACLab.Streaming.Server", "TioRACLab.Streaming.Server\TioRACLab.Streaming.Server.csproj", "{0B0E431E-B418-4356-BE16-AE0D0978A512}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,10 +27,14 @@ Global
 		{8AE24C55-C554-4BC2-BB31-E313503B7375}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8AE24C55-C554-4BC2-BB31-E313503B7375}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8AE24C55-C554-4BC2-BB31-E313503B7375}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C66129E3-205B-4DF0-86F7-77C55F727088}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C66129E3-205B-4DF0-86F7-77C55F727088}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C66129E3-205B-4DF0-86F7-77C55F727088}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C66129E3-205B-4DF0-86F7-77C55F727088}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87230CD8-05B8-4C90-B1CA-D02BE9BA2DA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87230CD8-05B8-4C90-B1CA-D02BE9BA2DA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87230CD8-05B8-4C90-B1CA-D02BE9BA2DA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87230CD8-05B8-4C90-B1CA-D02BE9BA2DA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B0E431E-B418-4356-BE16-AE0D0978A512}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B0E431E-B418-4356-BE16-AE0D0978A512}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B0E431E-B418-4356-BE16-AE0D0978A512}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B0E431E-B418-4356-BE16-AE0D0978A512}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
