@@ -4,6 +4,7 @@ using SmartStream.Client;
 using SmartStream.Client.Services;
 using System.Globalization;
 using Microsoft.JSInterop;
+using SmartStream.Manager;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
 builder.RootComponents.Add<App>("#app");
@@ -11,6 +12,8 @@ builder.RootComponents.Add<HeadOutlet>("head::after");
 
 builder.Services.AddScoped(sp => new StreamingHttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 builder.Services.AddScoped<ZipService>();
+builder.Services.AddSingleton<CurrentChannel>();
+
 builder.Services.AddLocalization();
 
 //await builder.Build().RunAsync();

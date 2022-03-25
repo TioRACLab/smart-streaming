@@ -70,11 +70,38 @@ namespace SmartStream.Client.Locales {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Load Channel.
+        /// </summary>
+        public static string Channel_Load {
+            get {
+                return ResourceManager.GetString("Channel_Load", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a New Channel.
+        /// </summary>
+        public static string Channel_New {
+            get {
+                return ResourceManager.GetString("Channel_New", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Channels.
         /// </summary>
         public static string Channels {
             get {
                 return ResourceManager.GetString("Channels", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Login.
+        /// </summary>
+        public static string Login {
+            get {
+                return ResourceManager.GetString("Login", resourceCulture);
             }
         }
         
@@ -93,6 +120,15 @@ namespace SmartStream.Client.Locales {
         public static string Scenes {
             get {
                 return ResourceManager.GetString("Scenes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Smart Stream.
+        /// </summary>
+        public static string Title {
+            get {
+                return ResourceManager.GetString("Title", resourceCulture);
             }
         }
     }

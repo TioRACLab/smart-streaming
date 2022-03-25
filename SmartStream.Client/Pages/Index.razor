@@ -1,0 +1,52 @@
+﻿@page "/"
+@using SmartStream.Manager
+@inject IStringLocalizer<Locales.Strings> Loc
+@inject CurrentChannel Current
+
+<PageTitle>@Loc["Title"]</PageTitle>
+<h1>@Loc["Title"]</h1>
+
+<div class="row">
+
+
+    <button class="card col-12 col-md-4">
+        <h2>@Loc["Channel_New"]</h2>
+    </button>
+
+    <OpenChannelFile>
+        <button class="card col-12 col-md-4" onclick="document.getElementById('openChannelFile').click()" >
+            <h2>@Loc["Channel_Load"]</h2>
+        </button>
+    </OpenChannelFile>
+
+    <div class="card col-12 col-md-4">
+        <h2>@Loc["Login"]</h2>
+    </div>
+
+</div>
+
+
+
+
+
+
+@code {
+    
+/*if (_fileName != null)
+{
+    <h3>@_fileName</h3>
+    if (_entries.Any())
+    {
+        <ul>
+            @foreach (var item in _entries.Where(x => !x.Name.EndsWith("/")))
+            {
+                <li>
+                    <h4>@item.Name</h4>
+                    <pre>@item.ContentText</pre>
+                </li>
+            }
+        </ul>
+    }
+}*/
+    
+}

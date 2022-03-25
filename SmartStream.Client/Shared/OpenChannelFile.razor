@@ -1,0 +1,19 @@
+﻿@using SmartStream.Client.Services.Zip
+@using SmartStream.Manager
+@inject CurrentChannel Current
+
+@ChildContent
+
+<InputFile id="openChannelFile" OnChange="OnInputFileChange" accept=".channel" hidden />
+
+@code {
+
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+
+    private async Task OnInputFileChange(InputFileChangeEventArgs e)
+    {
+        await using var stream = e.File.OpenReadStream();
+        await Current.LoadLocalChannel(stream);
+    }
+}

@@ -21,6 +21,7 @@ namespace SmartStream.Client.Services
             {
                 await using var fileStream = entry.Open();
                 var fileBytes = await fileStream.ReadFully();
+
                 entries.Add(new ZipEntry { Name = entry.FullName, Content = fileBytes });
             }
 

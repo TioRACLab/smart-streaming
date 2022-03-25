@@ -4,7 +4,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <AssemblyName>StreamingServer</AssemblyName>
+    <AssemblyName>SmartStreamServer</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
@@ -15,7 +15,6 @@
     <ProjectReference Include="..\SmartStream.Client\SmartStream.Client.csproj" />
     <ProjectReference Include="..\SmartStream.Manager\SmartStream.Manager.csproj" />
     <ProjectReference Include="..\SmartStream\SmartStream.csproj" />
-    <ProjectReference Include="..\SmartStream.Client\SmartStream.Client.csproj" />
     <ProjectReference Include="..\SmartStream.Manager\SmartStream.Manager.csproj" />
     <ProjectReference Include="..\SmartStream\SmartStream.csproj" />
   </ItemGroup>

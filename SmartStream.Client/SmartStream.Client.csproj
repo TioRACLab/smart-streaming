@@ -25,12 +25,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\SmartStream.Manager\SmartStream.Manager.csproj" />
     <ProjectReference Include="..\SmartStream\SmartStream.csproj" />
     <ProjectReference Include="..\SmartStream\SmartStream.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Components\" />
+    <Folder Include="Helpers\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -43,7 +45,7 @@
 
   <ItemGroup>
     <EmbeddedResource Update="Locales\Strings.pt.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
+      <Generator></Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Locales\Strings.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

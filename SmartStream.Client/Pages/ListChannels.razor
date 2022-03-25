@@ -1,7 +1,8 @@
-﻿@page "/"
-@page "/channels"
+﻿@page "/channels"
+@using SmartStream.Manager
 @inject StreamingHttpClient httpClient
 @inject IStringLocalizer<Locales.Strings> Loc
+@inject CurrentChannel Current
 
 <PageTitle>@Loc["Channels"]</PageTitle>
 
@@ -23,6 +24,8 @@
     {
         await base.OnInitializedAsync();
 
-        Channels = await httpClient.GetJsonAsync<List<Channel>>("Channels");
+        
+
+        //Channels = await httpClient.GetJsonAsync<List<Channel>>("Channels");
     }
 }
