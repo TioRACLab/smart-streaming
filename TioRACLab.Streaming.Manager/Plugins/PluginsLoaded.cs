@@ -5,7 +5,6 @@ using System.Reflection;
 using System.Runtime.Loader;
 using System.Text;
 using System.Threading.Tasks;
-using TioRACLab.Streaming.Core;
 
 namespace TioRACLab.Streaming.Plugins
 {

@@ -1,6 +1,5 @@
 ﻿using System.Reflection;
 using System.Runtime.Loader;
-using TioRACLab.Streaming.Core;
 using System.Collections.ObjectModel;
 
 namespace TioRACLab.Streaming.Plugins

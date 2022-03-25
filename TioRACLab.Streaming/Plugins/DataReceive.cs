@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TioRACLab.Streaming.Core
+namespace TioRACLab.Streaming.Plugins
 {
     public class DataReceive
     {

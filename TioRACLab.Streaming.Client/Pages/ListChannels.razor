@@ -1,11 +1,11 @@
 ﻿@page "/"
 @page "/channels"
-
 @inject StreamingHttpClient httpClient
+@inject IStringLocalizer<Locales.Strings> Loc
 
-<PageTitle>Channels</PageTitle>
+<PageTitle>@Loc["Channels"]</PageTitle>
 
-<h1>Channels</h1>
+<h1>@Loc["Channels"]</h1>
 
 @foreach (Channel channel in Channels)
 {
