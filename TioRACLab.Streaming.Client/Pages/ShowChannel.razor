@@ -1,0 +1,30 @@
+﻿@page "/channel/{slug}"
+
+@inject StreamingHttpClient httpClient
+
+<PageTitle>Channel: @Channel?.Name</PageTitle>
+
+<h1>@Channel?.Name</h1>
+
+@foreach (Scene scene in Channel?.Scenes)
+{
+    <NavLink href="@($"channel/{Channel.Slug}/scene/{scene.Slug}")" >
+        <h2>@scene.Name</h2>
+    </NavLink>
+}
+
+@code {
+
+    [Parameter]
+    public string? Slug { get; set; }
+
+    [Parameter]
+    public Channel? Channel { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await base.OnInitializedAsync();
+
+        Channel = await httpClient.GetJsonAsync<Channel>($"Channels/{Slug}");
+    }
+}

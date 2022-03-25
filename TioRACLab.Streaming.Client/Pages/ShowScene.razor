@@ -1,0 +1,26 @@
+﻿@page "/channel/{channelSlug}/scene/{slug}"
+
+@inject StreamingHttpClient httpClient
+
+<PageTitle>Scene: @Scene?.Name</PageTitle>
+
+<h1>@Scene?.Name</h1>
+
+@code {
+
+    [Parameter]
+    public string? ChannelSlug { get; set; }
+
+    [Parameter]
+    public string? Slug { get; set; }
+
+    [Parameter]
+    public Scene? Scene { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await base.OnInitializedAsync();
+
+        Scene = await httpClient.GetJsonAsync<Scene>($"Channels/{ChannelSlug}/Scene/{Slug}");
+    }
+}

@@ -13,10 +13,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\TioRACLab.Streaming.Client\TioRACLab.Streaming.Client.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\TioRACLab.Streaming.Manager\TioRACLab.Streaming.Manager.csproj" />
+    <ProjectReference Include="..\TioRACLab.Streaming\TioRACLab.Streaming.csproj" />
   </ItemGroup>
 
 

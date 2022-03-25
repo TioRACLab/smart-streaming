@@ -1,0 +1,12 @@
+﻿@page "/channel/{channel}/scene/{slug}/edit"
+
+<h3>EditScene</h3>
+
+@code {
+
+    [Parameter]
+    public string Channel { get; set; }
+
+    [Parameter]
+    public string Slug { get; set; }
+}
